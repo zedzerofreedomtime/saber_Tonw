@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saber Town - กฎสภา</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%),
+                        linear-gradient(135deg, #010101 0%, #0b0f0c 50%, #010101 100%);
+            background-color: #010101;
+            color: #d4ff00;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #0a0a0a;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #00ff88;
+            border-bottom: 2px solid #39ff14;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 8px #39ff14;
+            display: flex;
+            align-items: center;
+            height: 120px;
+        }
+
+        .logo-img {
+            height: 120px;
+            max-height: 100%;
+            filter: drop-shadow(0 0 6px #39ff14);
+        }
+
+        nav a {
+            color: #00ff88;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #39ff14;
+        }
+
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 2px;
+            background-color: #39ff14;
+            box-shadow: 0 0 6px #39ff14;
+        }
+
+        /* Highlight for current page link */
+        nav a.current-page {
+            color: #39ff14;
+            text-shadow: 0 0 8px #39ff14;
+        }
+        nav a.current-page::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 2px;
+            background-color: #39ff14;
+            box-shadow: 0 0 6px #39ff14;
+        }
+
+        .content-section {
+            flex-grow: 1;
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #0d0d0d;
+            border: 2px solid #00ff88;
+            box-shadow: 0 0 15px #00ff88;
+            clip-path: polygon(30px 0%, 100% 0%, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0% 100%, 0% 30px);
+        }
+
+        .content-section h1 {
+            font-size: 48px;
+            color: #39ff14;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ff88;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #88ffc9;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .content-section p strong {
+            color: #39ff14;
+        }
+
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+
+        .content-section ul li {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 3px solid #39ff14;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #00ff88;
+            box-shadow: 0 0 5px rgba(57, 255, 20, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .content-section ul li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 0 10px rgba(57, 255, 20, 0.7);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0a0a0a;
+            color: #00ff88;
+            font-size: 14px;
+            border-top: 1px solid #39ff14;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif" alt="Saber Town" class="logo-img">
+        </div>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="about-city.html">เกี่ยวกับเมือง</a>
+            <a href="medic-rules.html">กฎแพทย์</a>
+            <a href="police-rules.html">กฎตำรวจ</a>
+            <a href="council-rules.html" class="current-page">กฎสภา</a>
+        </nav>
+    </header>
+
+    <main class="content-section">
+        <h1>กฎสำหรับสภาเมือง Saber Town</h1>
+        <p>สภาเมือง Saber Town เป็นองค์กรสูงสุดในการบริหารและกำหนดทิศทางของเมือง สมาชิกสภาทุกท่านมีหน้าที่รับผิดชอบต่อความเป็นอยู่ที่ดีของประชาชนและพัฒนาเมืองให้ก้าวหน้า กฎเหล่านี้ถูกสร้างขึ้นเพื่อให้การบริหารเป็นไปอย่างโปร่งใสและมีประสิทธิภาพ</p>
+
+        <h2>ข้อปฏิบัติทั่วไป</h2>
+        <ul>
+            <li>**ความรับผิดชอบ:** สมาชิกสภาต้องรับผิดชอบต่อการตัดสินใจและการกระทำของตนเองและต้องปฏิบัติตนเพื่อประโยชน์สูงสุดของเมืองและประชาชน</li>
+            <li>**ความโปร่งใส:** การประชุมสภาและการตัดสินใจที่สำคัญควรเปิดเผยต่อสาธารณะเท่าที่จะทำได้ เว้นแต่ข้อมูลที่เป็นความลับสูง</li>
+            <li>**การมีส่วนร่วม:** ส่งเสริมการมีส่วนร่วมของประชาชนในการแสดงความคิดเห็นและข้อเสนอแนะในการพัฒนาเมือง</li>
+            <li>**การเคารพกฎหมาย:** สมาชิกสภาต้องเคารพและปฏิบัติตามกฎหมายของเมืองอย่างเคร่งครัด</li>
+        </ul>
+
+        <h2>ข้อห้ามสำคัญ</h2>
+        <ul>
+            <li>**การขัดกันทางผลประโยชน์:** ห้ามใช้ตำแหน่งหน้าที่เพื่อแสวงหาผลประโยชน์ส่วนตัวหรือพวกพ้อง</li>
+            <li>**การใช้อำนาจในทางที่ผิด:** ห้ามใช้อำนาจที่ได้รับมาเพื่อบีบบังคับ หรือกระทำการใดๆ ที่ไม่เป็นธรรม</li>
+            <li>**การคอร์รัปชัน:** ห้ามรับหรือให้สินบนทุกรูปแบบ</li>
+            <li>**การรั่วไหลข้อมูล:** ห้ามเปิดเผยข้อมูลที่เป็นความลับของสภาหรือของเมืองโดยไม่ได้รับอนุญาต</li>
+        </ul>
+
+        <p>สภาเมือง Saber Town ยึดมั่นในหลักการธรรมาภิบาล เพื่อสร้างเมืองที่แข็งแกร่งและยุติธรรมสำหรับทุกคน</p>
+    </main>
+
+    <footer>
+        &copy; Saber Town RP 2025 – สร้างสรรค์โดย Team Yami
+    </footer>
+</body>
+
+</html>

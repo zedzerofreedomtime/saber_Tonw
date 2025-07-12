@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saber Town - กฎตำรวจ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%),
+                        linear-gradient(135deg, #010101 0%, #0b0f0c 50%, #010101 100%);
+            background-color: #010101;
+            color: #d4ff00;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #0a0a0a;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #00ff88;
+            border-bottom: 2px solid #39ff14;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 8px #39ff14;
+            display: flex;
+            align-items: center;
+            height: 120px;
+        }
+
+        .logo-img {
+            height: 120px;
+            max-height: 100%;
+            filter: drop-shadow(0 0 6px #39ff14);
+        }
+
+        nav a {
+            color: #00ff88;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #39ff14;
+        }
+
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 2px;
+            background-color: #39ff14;
+            box-shadow: 0 0 6px #39ff14;
+        }
+
+        /* Highlight for current page link */
+        nav a.current-page {
+            color: #39ff14;
+            text-shadow: 0 0 8px #39ff14;
+        }
+        nav a.current-page::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 2px;
+            background-color: #39ff14;
+            box-shadow: 0 0 6px #39ff14;
+        }
+
+        .content-section {
+            flex-grow: 1;
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #0d0d0d;
+            border: 2px solid #00ff88;
+            box-shadow: 0 0 15px #00ff88;
+            clip-path: polygon(30px 0%, 100% 0%, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0% 100%, 0% 30px);
+        }
+
+        .content-section h1 {
+            font-size: 48px;
+            color: #39ff14;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ff88;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #88ffc9;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .content-section p strong {
+            color: #39ff14;
+        }
+
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+
+        .content-section ul li {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 3px solid #39ff14;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #00ff88;
+            box-shadow: 0 0 5px rgba(57, 255, 20, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .content-section ul li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 0 10px rgba(57, 255, 20, 0.7);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0a0a0a;
+            color: #00ff88;
+            font-size: 14px;
+            border-top: 1px solid #39ff14;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif" alt="Saber Town" class="logo-img">
+        </div>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="about-city.html">เกี่ยวกับเมือง</a>
+            <a href="medic-rules.html">กฎแพทย์</a>
+            <a href="police-rules.html" class="current-page">กฎตำรวจ</a>
+            <a href="council-rules.html">กฎสภา</a>
+        </nav>
+    </header>
+
+    <main class="content-section">
+        <h1>กฎสำหรับเจ้าหน้าที่ตำรวจ</h1>
+        <p>เจ้าหน้าที่ตำรวจใน Saber Town มีหน้าที่สำคัญในการรักษากฎหมายและความสงบเรียบร้อย เพื่อให้เมืองของเราเป็นสถานที่ที่ปลอดภัยสำหรับทุกคน การปฏิบัติตามกฎเหล่านี้เป็นสิ่งสำคัญยิ่ง</p>
+
+        <h2>ข้อปฏิบัติทั่วไป</h2>
+        <ul>
+            <li>**การรักษาความยุติธรรม:** ปฏิบัติหน้าที่ด้วยความซื่อสัตย์สุจริต เที่ยงธรรม และไม่เลือกปฏิบัติ</li>
+            <li>**การใช้กำลัง:** การใช้กำลังต้องเป็นไปตามความจำเป็นและสัดส่วนของสถานการณ์เท่านั้น โดยยึดหลักลดการบาดเจ็บและความสูญเสีย</li>
+            <li>**การสื่อสาร:** สื่อสารอย่างชัดเจนและมืออาชีพกับประชาชนและผู้ต้องสงสัยเสมอ</li>
+            <li>**การช่วยเหลือประชาชน:** พร้อมให้ความช่วยเหลือและปกป้องประชาชนจากอาชญากรรมและอันตรายต่างๆ</li>
+        </ul>
+
+        <h2>ข้อห้ามสำคัญ</h2>
+        <ul>
+            <li>**การใช้อำนาจโดยมิชอบ:** ห้ามใช้อำนาจหน้าที่ในทางที่ผิด หรือเพื่อประโยชน์ส่วนตัว</li>
+            <li>**การทุจริต:** ห้ามรับสินบน หรือมีส่วนร่วมในการทุจริตทุกรูปแบบ</li>
+            <li>**การทรมาน:** ห้ามกระทำการทรมาน หรือปฏิบัติอย่างไร้มนุษยธรรมต่อผู้ต้องสงสัยหรือผู้ถูกควบคุมตัว</li>
+            <li>**การละเลยหน้าที่:** ห้ามละเลยหรือเพิกเฉยต่ออาชญากรรมที่เกิดขึ้นตรงหน้า</li>
+        </ul>
+
+        <p>เจ้าหน้าที่ตำรวจคือผู้พิทักษ์ความยุติธรรมใน Saber Town ขอให้ปฏิบัติหน้าที่ด้วยเกียรติและศักดิ์ศรีเสมอ</p>
+    </main>
+
+    <footer>
+        &copy; Saber Town RP 2025 – สร้างสรรค์โดย Team Yami
+    </footer>
+</body>
+
+</html>
