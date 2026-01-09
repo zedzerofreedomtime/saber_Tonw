@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saber Town - กฎกิจกรรม</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">
+      <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif"
+           alt="Saber Town"
+           class="logo-img">
+    </div>
+
+    <nav>
+      <a href="../index.html">หน้าแรก</a>
+      <span style="position:relative; display:inline-block;">
+  <!-- เกี่ยวกับเมือง -->
+<span style="position:relative; display:inline-block;">
+  <a href="javascript:void(0)" 
+  class="current-page"
+  onclick="toggleMenu('aboutMenu', this)">
+    กฎกิจกรรม ▾
+  </a>
+  <span id="aboutMenu" style="display:none; position:absolute; top:115%; left:0; white-space:nowrap; z-index:999;">
+    <a href="basic_rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎพื้นฐาน</a>
+    <a href="city-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎเมือง</a>
+  </span>
+</span>
+
+<!-- กฎแพทย์ -->
+<span style="position:relative; display:inline-block;">
+  <a href="javascript:void(0)" onclick="toggleMenu('medicMenu', this)">
+    กฎแพทย์ ▾
+  </a>
+  <span id="medicMenu" style="display:none; position:absolute; top:115%; left:0; white-space:nowrap; z-index:999;">
+    <a href="../doctor/doctor-rules.html"style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎระเบียบแพทย์</a>
+    <a href="../doctor/duty-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎการปฏิบัติหน้าที่</a>
+    <a href="../doctor/penalty-blacklist.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎการปรับ/Blacklist</a>
+    <a href="../doctor/medical-fees.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">ค่ารักษาพยาบาล</a>
+  </span>
+</span>
+
+<!-- กฎตำรวจ -->
+<span style="position:relative; display:inline-block;">
+  <a href="javascript:void(0)" onclick="toggleMenu('policeMenu', this)">
+    กฎตำรวจ ▾
+  </a>
+  <span id="policeMenu" style="display:none; position:absolute; top:115%; left:0; white-space:nowrap; z-index:999;">
+    <a href="../police/basic-police-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎพื้นฐานตำรวจ</a>
+    <a href="../police/duty-police.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">การปฏิบัติงาน</a>
+    <a href="../police/warrant.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">หมายเรียก / หมายจับ</a>
+    <a href="../police/police/discipline.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">โทษวินัยตำรวจ</a>
+    <a href="../police/fines.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">ค่าปรับ</a>
+  </span>
+</span>
+
+<!-- กฎสภา -->
+<span style="position:relative; display:inline-block;">
+  <a href="javascript:void(0)" onclick="toggleMenu('councilMenu', this)">
+    กฎสภา ▾
+  </a>
+  <span id="councilMenu" style="display:none; position:absolute; top:115%; left:0; white-space:nowrap; z-index:999;">
+    <a href="../council/council-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎสภา</a>
+    <a href="../council/gang-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">แก๊ง</a>
+    <a href="../council/council-fees.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">ค่าใช้จ่ายธุรกรรมสภา</a>
+    <a href="../council/council-story.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">สตอรี่</a>
+    <a href="../council/contracts.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">การทำสัญญา</a>
+  </span>
+  </header>
+
+  <!-- ===== CONTENT ===== -->
+  <main class="content-section">
+    <h1>กฎกิจกรรมของเมือง Saber Town</h1>
+
+    <p>
+      กฎกิจกรรมถูกจัดทำขึ้นเพื่อควบคุมกิจกรรมพิเศษต่าง ๆ ภายใน
+      <strong>Saber Town</strong> ให้เป็นไปอย่างยุติธรรม สนุก
+      และไม่กระทบต่อผู้เล่นที่ไม่ได้เข้าร่วมกิจกรรม
+    </p>
+
+    <h2>1. กิจกรรมภายในเมือง</h2>
+    <ul>
+      <li>กิจกรรมทุกประเภทต้องมีการประกาศล่วงหน้าอย่างชัดเจน</li>
+      <li>ผู้จัดกิจกรรมต้องรับผิดชอบความเรียบร้อยตลอดกิจกรรม</li>
+      <li>ห้ามบังคับผู้เล่นที่ไม่สมัครใจเข้าร่วมกิจกรรม</li>
+    </ul>
+
+    <h2>2. กิจกรรมแข่งขัน</h2>
+    <ul>
+      <li>การแข่งขันต้องมีกติกาที่ชัดเจนและเป็นธรรม</li>
+      <li>ห้ามใช้บั๊ก หรือช่องโหว่ของเกมเพื่อเอาเปรียบ</li>
+      <li>คำตัดสินของผู้จัดหรือทีมงานถือเป็นที่สิ้นสุด</li>
+    </ul>
+
+    <h2>3. กิจกรรมที่มีความรุนแรง</h2>
+    <ul>
+      <li>กิจกรรมที่มีการต่อสู้ต้องอยู่ภายใต้การควบคุมของทีมงาน</li>
+      <li>ห้ามใช้อาวุธหรืออุปกรณ์นอกเหนือจากที่กิจกรรมกำหนด</li>
+      <li>ต้องคำนึงถึงความปลอดภัยและบทโรลเพลย์เป็นหลัก</li>
+    </ul>
+
+    <h2>4. บทลงโทษ</h2>
+    <ul>
+      <li>การฝ่าฝืนกฎกิจกรรมจะถูกลงโทษตามระดับความรุนแรง</li>
+      <li>โทษอาจรวมถึงการตักเตือน ตัดสิทธิ์ หรือบทลงโทษจากทีมงาน</li>
+    </ul>
+
+    <p>
+      เมือง <strong>Saber Town</strong> สนับสนุนกิจกรรมที่สร้างสรรค์
+      ขอให้ทุกคนเคารพกฎเพื่อให้ทุกกิจกรรมเต็มไปด้วยความสนุก
+      และความประทับใจร่วมกัน
+    </p>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    &copy; Saber Town RP 2026 – Created by Pegasus Team 
+  </footer>
+
+    <script>
+function toggleMenu(menuId, btn){
+  const menu = document.getElementById(menuId);
+  const isOpen = menu.style.display === "block";
+  menu.style.display = isOpen ? "none" : "block";
+  btn.innerHTML = btn.textContent.replace(isOpen ? "▴" : "▾", isOpen ? "▾" : "▴");
+}
+</script>
+
+</body>
+</html>
