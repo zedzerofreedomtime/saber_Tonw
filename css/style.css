@@ -503,3 +503,231 @@ nav a.current-page::after{
   padding: 8px 12px;    /* เท่ากันหมด */
   margin-top: 6px;      /* เท่ากันหมด */
 }
+
+/* =========================
+   Saber Town Responsive CSS
+   Mobile-first (มือถือก่อน)
+   ========================= */
+
+/* Reset เบาๆ */
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+img{ max-width:100%; height:auto; display:block; }
+
+:root{
+  --bg:#070a10;
+  --card: rgba(15, 22, 34, .75);
+  --border: rgba(0, 255, 170, .18);
+  --text:#e9f2ff;
+  --muted:#b7c6d9;
+  --accent:#00ff9a;
+  --shadow: 0 10px 30px rgba(0,0,0,.45);
+}
+
+body{
+  font-family: "Orbitron", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(1200px 600px at 50% 0%, rgba(0,255,154,.12), transparent 55%),
+              radial-gradient(900px 500px at 20% 30%, rgba(0,200,255,.08), transparent 50%),
+              var(--bg);
+  color: var(--text);
+}
+
+/* ===== Header ===== */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(7,10,16,.75);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.logo{
+  display:flex;
+  justify-content:center;
+  padding: 10px 12px 6px;
+}
+
+.logo-img{
+  width: min(520px, 92vw);
+  max-height: 110px;
+  object-fit: contain;
+}
+
+/* ===== Nav (Responsive) ===== */
+nav{
+  display:flex;
+  flex-wrap: wrap;            /* มือถือให้ขึ้นบรรทัดได้ */
+  gap: 8px;
+  justify-content: center;
+  padding: 10px 12px 14px;
+}
+
+nav > a, .nav-group > a{
+  color: var(--text);
+  text-decoration:none;
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  transition: .2s ease;
+  touch-action: manipulation;
+}
+
+nav > a:hover,
+.nav-group > a:hover{
+  border-color: var(--border);
+  box-shadow: 0 0 0 3px rgba(0,255,154,.08);
+}
+
+.current-page{
+  border-color: rgba(0,255,154,.35) !important;
+}
+
+/* กลุ่มเมนู */
+.nav-group{
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown */
+.nav-dropdown{
+  display:none;
+  position:absolute;
+  left:0;
+  top: calc(100% + 8px);
+  min-width: 220px;
+
+  background: rgba(10,14,22,.96);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 8px;
+}
+
+.nav-dropdown a{
+  display:block;
+  color: var(--text);
+  text-decoration:none;
+  font-size: 13px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.nav-dropdown a:hover{
+  background: rgba(0,255,154,.10);
+}
+
+/* มือถือ: dropdown ให้ “เต็มความกว้าง” และไม่ล้นจอ */
+@media (max-width: 640px){
+  nav{
+    justify-content: flex-start;
+    overflow-x: auto;          /* ถ้าเมนูเยอะ ให้เลื่อนได้ */
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 12px;
+  }
+
+  nav::-webkit-scrollbar{ height: 6px; }
+  nav::-webkit-scrollbar-thumb{ background: rgba(255,255,255,.15); border-radius: 99px; }
+
+  .nav-dropdown{
+    position: fixed;           /* ล็อกให้อยู่ในหน้าจอ */
+    left: 12px;
+    right: 12px;
+    top: 120px;                /* ปรับได้ตามความสูง header */
+    min-width: auto;
+    max-height: 55vh;
+    overflow: auto;
+  }
+}
+
+/* ===== Hero ===== */
+.hero{
+  text-align:center;
+  padding: 26px 14px 10px;
+}
+
+.hero h1{
+  margin: 10px 0 6px;
+  font-size: clamp(22px, 5vw, 44px);
+  letter-spacing: .6px;
+  text-shadow: 0 0 22px rgba(0,255,154,.18);
+}
+
+.hero p{
+  margin: 0 auto;
+  max-width: 760px;
+  color: var(--muted);
+  font-size: clamp(13px, 3.5vw, 16px);
+  line-height: 1.6;
+}
+
+/* ===== Follow Buttons Panel ===== */
+.panel-buttons{
+  display:grid;
+  grid-template-columns: 1fr;  /* มือถือ: เรียงลง */
+  gap: 12px;
+  margin: 18px auto 30px;
+  width: min(920px, 92vw);
+}
+
+.panel-button{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  text-decoration:none;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: var(--shadow);
+  transition: .2s ease;
+}
+
+.panel-button:hover{
+  transform: translateY(-1px);
+  border-color: rgba(0,255,154,.35);
+}
+
+.side-block{
+  width: 10px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(0,255,154,.95), rgba(0,180,255,.65));
+  box-shadow: 0 0 18px rgba(0,255,154,.18);
+}
+
+.panel-button .text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+.panel-button .label{
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.panel-button .main{
+  font-size: 18px;
+  letter-spacing: .8px;
+}
+
+/* จอคอม: 3 ปุ่มเรียง 3 คอลัมน์ */
+@media (min-width: 900px){
+  .panel-buttons{ grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ===== Footer ===== */
+footer{
+  text-align:center;
+  color: rgba(233,242,255,.75);
+  padding: 18px 12px 26px;
+  font-size: 12px;
+}
+
+/* ทำให้กดง่ายขึ้นบนมือถือ */
+a, button{ -webkit-tap-highlight-color: transparent; }
