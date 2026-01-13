@@ -121,14 +121,28 @@
   </footer>
 
     <script>
+function closeAllDropdowns(){
+  document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = 'none');
+  document.querySelectorAll('.nav-group > a').forEach(a => {
+    a.textContent = a.textContent.replace("▴","▾");
+  });
+}
+
 function toggleMenu(menuId, btn){
   const menu = document.getElementById(menuId);
-  const isOpen = menu.style.display === "block";
-  menu.style.display = isOpen ? "none" : "block";
-  btn.innerHTML = btn.textContent.replace(isOpen ? "▴" : "▾", isOpen ? "▾" : "▴");
+  const willOpen = menu.style.display !== "block";
+  closeAllDropdowns();
+  menu.style.display = willOpen ? "block" : "none";
+  btn.textContent = btn.textContent.replace(willOpen ? "▾" : "▴", willOpen ? "▴" : "▾");
 }
+
+document.addEventListener("click", (e) => {
+  const insideNav = e.target.closest("nav");
+  if(!insideNav) closeAllDropdowns();
+});
 </script>
 
 </body>
 </html>
+
 
