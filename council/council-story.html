@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Saber Town - สตอรี่</title>
-  <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
 
@@ -12,62 +13,53 @@
     <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif" class="logo-img">
   </div>
  <nav>
-      <a href="../index.html">หน้าแรก</a>
-      <span style="position:relative; display:inline-block;">
+  <a href="index.html" class="current-page">หน้าแรก</a>
+
   <!-- เกี่ยวกับเมือง -->
-<span style="position:relative; display:inline-block;">
-  <a href="javascript:void(0)" 
-  onclick="toggleMenu('aboutMenu', this)">
-    กฎกิจกรรม ▾
-  </a>
-  <span id="aboutMenu" style="display:none; position:absolute; top:115%; left:0; white-space:nowrap; z-index:999;">
-    <a href="../basic/basic_rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎพื้นฐาน</a>
-    <a href="../basic/city-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎเมือง</a>
-    <a href="../basic/activity-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎกิจกรรม</a>
+  <span class="nav-group">
+    <a href="javascript:void(0)" onclick="toggleMenu('aboutMenu', this)">เกี่ยวกับเมือง ▾</a>
+    <span id="aboutMenu" class="nav-dropdown">
+      <a href="basic/basic_rules.html">กฎพื้นฐาน</a>
+      <a href="basic/city-rules.html">กฎเมือง</a>
+      <a href="basic/activity-rules.html">กฎกิจกรรม</a>
+    </span>
   </span>
-</span>
 
-<!-- กฎแพทย์ -->
-<span style="position:relative; display:inline-block;">
-  <a href="javascript:void(0)" 
-  onclick="toggleMenu('medicMenu', this)">
-    กฎแพทย์ ▾
-  </a>
-  <span id="medicMenu" style="display:none; position:absolute; top:115%; left:0; white-space:nowrap; z-index:999;">
-    <a href="../doctor/doctor-rules.html"style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎระเบียบแพทย์</a>
-    <a href="../doctor/duty-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎการปฏิบัติหน้าที่</a>
-    <a href="../doctor/penalty-blacklist.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎการปรับ/Blacklist</a>
-    <a href="../doctor/medical-fees.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">ค่ารักษาพยาบาล</a>
+  <!-- กฎแพทย์ -->
+  <span class="nav-group">
+    <a href="javascript:void(0)" onclick="toggleMenu('medicMenu', this)">กฎแพทย์ ▾</a>
+    <span id="medicMenu" class="nav-dropdown">
+      <a href="doctor/doctor-rules.html">กฎระเบียบแพทย์</a>
+      <a href="doctor/duty-rules.html">กฎการปฏิบัติหน้าที่</a>
+      <a href="doctor/penalty-blacklist.html">กฎการปรับ/Blacklist</a>
+      <a href="doctor/medical-fees.html">ค่ารักษาพยาบาล</a>
+    </span>
   </span>
-</span>
 
-<!-- กฎตำรวจ -->
-<span style="position:relative; display:inline-block;">
-  <a href="javascript:void(0)" onclick="toggleMenu('policeMenu', this)">
-    กฎตำรวจ ▾
-  </a>
-  <span id="policeMenu" style="display:none; position:absolute; top:115%; left:0; white-space:nowrap; z-index:999;">
-    <a href="../police/basic-police-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎพื้นฐานตำรวจ</a>
-    <a href="../police/duty-police.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">การปฏิบัติงาน</a>
-    <a href="../police/warrant.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">หมายเรียก / หมายจับ</a>
-    <a href="../police/police/discipline.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">โทษวินัยตำรวจ</a>
-    <a href="../police/fines.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">ค่าปรับ</a>
+  <!-- กฎตำรวจ -->
+  <span class="nav-group">
+    <a href="javascript:void(0)" onclick="toggleMenu('policeMenu', this)">กฎตำรวจ ▾</a>
+    <span id="policeMenu" class="nav-dropdown">
+      <a href="police/basic-police-rules.html">กฎพื้นฐานตำรวจ</a>
+      <a href="police/duty-police.html">การปฏิบัติงาน</a>
+      <a href="police/warrant.html">หมายเรียก / หมายจับ</a>
+      <a href="police/discipline.html">โทษวินัยตำรวจ</a>
+      <a href="police/fines.html">ค่าปรับ</a>
+    </span>
   </span>
-</span>
 
-<!-- กฎสภา -->
-<span style="position:relative; display:inline-block;">
-  <a href="javascript:void(0)" 
-  class="current-page"
-  onclick="toggleMenu('councilMenu', this)">
-    สตอรี่ ▾
-  </a>
-  <span id="councilMenu" style="display:none; position:absolute; top:115%; left:0; white-space:nowrap; z-index:999;">
-    <a href="council-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">กฎสภา</a>
-    <a href="gang-rules.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">แก๊ง</a>
-    <a href="council-fees.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">ค่าใช้จ่ายธุรกรรมสภา</a>
-    <a href="contracts.html" style="display:block; font-size:10px; padding:4px 8px; margin-top:4px;">การทำสัญญา</a>
+  <!-- กฎสภา -->
+  <span class="nav-group">
+    <a href="javascript:void(0)" onclick="toggleMenu('councilMenu', this)">กฎสภา ▾</a>
+    <span id="councilMenu" class="nav-dropdown">
+      <a href="council/council-rules.html">กฎสภา</a>
+      <a href="council/gang-rules.html">แก๊ง</a>
+      <a href="council/council-fees.html">ค่าใช้จ่ายธุรกรรมสภา</a>
+      <a href="council/council-story.html">สตอรี่</a>
+      <a href="council/contracts.html">การทำสัญญา</a>
+    </span>
   </span>
+</nav>
 </header>
 
 <main class="content-section">
@@ -82,12 +74,26 @@
 <footer>Saber Town RP 2026 – Created by Pegasus Team </footer>
 
 <script>
+function closeAllDropdowns(){
+  document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = 'none');
+  document.querySelectorAll('.nav-group > a').forEach(a => {
+    a.textContent = a.textContent.replace("▴","▾");
+  });
+}
+
 function toggleMenu(menuId, btn){
   const menu = document.getElementById(menuId);
-  const isOpen = menu.style.display === "block";
-  menu.style.display = isOpen ? "none" : "block";
-  btn.innerHTML = btn.textContent.replace(isOpen ? "▴" : "▾", isOpen ? "▾" : "▴");
+  const willOpen = menu.style.display !== "block";
+  closeAllDropdowns();
+  menu.style.display = willOpen ? "block" : "none";
+  btn.textContent = btn.textContent.replace(willOpen ? "▾" : "▴", willOpen ? "▴" : "▾");
 }
+
+document.addEventListener("click", (e) => {
+  const insideNav = e.target.closest("nav");
+  if(!insideNav) closeAllDropdowns();
+});
 </script>
+
 </body>
 </html>

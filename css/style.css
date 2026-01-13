@@ -731,3 +731,50 @@ footer{
 
 /* ทำให้กดง่ายขึ้นบนมือถือ */
 a, button{ -webkit-tap-highlight-color: transparent; }
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(7,10,16,.75);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+/* กล่องคุมโลโก้ + เมนู */
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ซ้าย-ขวา */
+  padding: 10px 16px;
+}
+
+/* โลโก้ */
+.logo{
+  display:flex;
+  align-items:center;
+}
+
+.logo-img{
+  height: 150px;          /* คุมขนาด */
+  width: auto;
+}
+
+/* เมนู */
+nav{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+}
+
+@media (max-width: 768px){
+  .header-inner{
+    height: auto;
+    padding: 10px 14px;
+  }
+
+  .logo-img{
+    max-height: 64px;
+  }
+}
+
