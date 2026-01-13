@@ -477,3 +477,29 @@ nav a.current-page::after{
   animation: scanMove 0.9s ease forwards;
   opacity:1;
 }
+
+/* ทำให้กลุ่มเมนูจัดทรงเหมือนกัน */
+.nav-group{
+  position: relative;
+  display: inline-block;
+}
+
+/* dropdown ให้เท่ากันทุกอัน */
+.nav-dropdown{
+  display:none;
+  position:absolute;
+  top:115%;
+  left:0;
+  white-space:nowrap;
+  z-index:999;
+
+  min-width: 170px;     /* ให้ปุ่มย่อยกว้างเท่ากัน */
+}
+
+/* ปุ่มย่อยใน dropdown */
+.nav-dropdown a{
+  display:block;
+  font-size: 12px;      /* เท่ากันหมด */
+  padding: 8px 12px;    /* เท่ากันหมด */
+  margin-top: 6px;      /* เท่ากันหมด */
+}

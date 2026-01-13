@@ -1,0 +1,121 @@
+@import url("style.css");
+
+/* ================================
+   COUNCIL – FULL GOLD OVERRIDE
+   (NO LAYOUT CHANGE)
+   ================================ */
+
+:root{
+  --gold-main: #d4af37;
+  --gold-bright: #ffd700;
+  --gold-soft: #f6e3a1;
+
+  --gold-glow: rgba(212,175,55,.6);
+  --gold-glow-soft: rgba(212,175,55,.35);
+}
+
+/* ===== GLOBAL TEXT ===== */
+body{
+  color: var(--gold-soft);
+}
+
+/* ===== HEADER / FOOTER ===== */
+header{
+  border-bottom-color: var(--gold-main);
+}
+
+footer{
+  border-top-color: var(--gold-main);
+  color: var(--gold-main);
+}
+
+/* ===== LOGO ===== */
+.logo-img{
+  filter:
+    drop-shadow(0 0 10px var(--gold-glow))
+    drop-shadow(0 0 22px var(--gold-glow-soft));
+}
+
+/* ===== NAV (เมนูบน) ===== */
+nav a{
+  color: var(--gold-main) !important;
+  text-shadow: 0 0 6px var(--gold-glow-soft);
+}
+
+nav a:hover{
+  color: var(--gold-bright) !important;
+}
+
+nav a.current-page{
+  color: var(--gold-bright) !important;
+  border-color: var(--gold-main) !important;
+  box-shadow:
+    0 0 12px var(--gold-glow),
+    inset 0 0 6px rgba(255,215,0,.35);
+}
+
+/* เส้นใต้ / เอฟเฟกต์ hover */
+nav a:hover::after,
+nav a.current-page::after{
+  background: var(--gold-main) !important;
+  box-shadow: 0 0 8px var(--gold-glow);
+}
+
+/* ===== SCAN LINE (ไฟวิ่ง) ===== */
+nav a::after{
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(212,175,55,.08) 30%,
+    rgba(255,215,0,.35) 50%,
+    rgba(212,175,55,.08) 70%,
+    transparent 100%
+  );
+}
+
+/* ===== CONTENT BOX ===== */
+.content-section{
+  border-color: var(--gold-main);
+  box-shadow:
+    0 0 18px var(--gold-glow-soft),
+    0 0 32px rgba(212,175,55,.25);
+}
+
+/* ===== TITLES ===== */
+.content-section h1{
+  color: var(--gold-bright) !important;
+  text-shadow:
+    0 0 10px rgba(255,215,0,.75),
+    0 0 26px rgba(212,175,55,.55);
+}
+
+.content-section h2{
+  color: var(--gold-main) !important;
+  text-shadow:
+    0 0 8px rgba(212,175,55,.55);
+}
+
+/* ===== PARAGRAPH ===== */
+.content-section p{
+  color: var(--gold-soft) !important;
+}
+
+/* ===== LIST ITEMS (ตัดเขียวออกทั้งหมด) ===== */
+.content-section ul li{
+  color: var(--gold-soft) !important;
+  background: rgba(212,175,55,.08) !important;
+  border-left-color: var(--gold-main) !important;
+}
+
+.content-section ul li:hover{
+  box-shadow:
+    0 0 12px rgba(255,215,0,.55),
+    0 0 22px rgba(212,175,55,.45);
+}
+
+/* ===== ล้างสีเขียวที่หลงจาก style.css ===== */
+*[style*="#39ff14"],
+*[style*="#00ff88"]{
+  color: var(--gold-main) !important;
+  border-color: var(--gold-main) !important;
+}
