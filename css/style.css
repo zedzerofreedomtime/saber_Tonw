@@ -152,7 +152,7 @@ nav a.current-page{
 
 .content-section h2{
   color:#39ff14;
-  margin-top:40px;
+  margin-top:5px;
 }
 
 .content-section p{
@@ -776,5 +776,35 @@ nav{
   .logo-img{
     max-height: 64px;
   }
+}
+
+/* Header fade effect */
+header{
+  position: sticky;   /* ถ้าเดิมเป็น sticky อยู่แล้วไม่ต้องแก้ */
+  top: 0;
+  z-index: 999;
+  transition: opacity .35s ease, transform .35s ease;
+  will-change: opacity, transform;
+}
+
+/* ตอนเลื่อนลง */
+header.header-hide{
+  opacity: 0;
+  transform: translateY(-18px);
+  pointer-events: none; /* กันเมนูยังคลิกได้ทั้งที่มองไม่เห็น */
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: opacity .35s ease, transform .35s ease;
+  will-change: opacity, transform;
+}
+
+header.header-hide{
+  opacity: 0;
+  transform: translateY(-18px);
+  pointer-events: none;
 }
 
