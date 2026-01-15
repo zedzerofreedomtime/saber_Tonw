@@ -13,7 +13,7 @@
     <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif" class="logo-img">
   </div>
   <nav>
-  <a href="../index.html" class="current-page">หน้าแรก</a>
+  <a href="../index.html" >หน้าแรก</a>
 
   <!-- เกี่ยวกับเมือง -->
   <span class="nav-group">
@@ -38,7 +38,7 @@
 
   <!-- กฎตำรวจ -->
   <span class="nav-group">
-    <a href="javascript:void(0)" onclick="toggleMenu('policeMenu', this)">กฎตำรวจ ▾</a>
+    <a href="javascript:void(0)" class="current-page" onclick="toggleMenu('policeMenu', this)">กฎตำรวจ ▾</a>
     <span id="policeMenu" class="nav-dropdown">
       <a href="basic-police-rules.html">กฎพื้นฐานตำรวจ</a>
       <a href="duty-police.html">การปฏิบัติงาน</a>
@@ -63,18 +63,175 @@
 </header>
 
 <main class="content-section">
-  <h1>โทษวินัยตำรวจ</h1>
-  <ul>
-    <li>ตักเตือน → สำหรับความผิดเล็กน้อย</li>
-    <li>พักงาน → กรณีฝ่าฝืนกฎซ้ำ</li>
-    <li>ปลดจากตำแหน่ง → ความผิดร้ายแรง</li>
-    <li>Blacklist → กระทำผิดหนักหรือเจตนาทุจริต</li>
-  </ul>
+ <h1>โทษวินัยของเจ้าหน้าที่ตำรวจ</h1>
+
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>ลำดับ</th>
+      <th>รายการ</th>
+      <th>ค่าปรับ (บาท)</th>
+      <th>เวลาจำคุก (นาที)</th>
+      <th>หมายเหตุ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>เล่นในเวลางาน (ยิงปืนเล่น แทงเล่นหน้าสน. ต่อยกันในชุดตำรวจ ยิงตำรวจด้วยกันเองเล่น)</td>
+      <td>50,000</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ทำรถหน่วยงานหลุด</td>
+      <td>50,000</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ไม่เข้าวอตอนเข้าเวร</td>
+      <td>50,000</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>ใช้รถหน่วยงานไม่ตรงตามยศ</td>
+      <td>200,000</td>
+      <td>-</td>
+      <td>ยกเว้นเจ้าของรถนั่งหรือได้รับอนุญาตจาก ผบ.ตร.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>ทำเกินกว่าเหตุกับประชาชนหรือผู้ต้องหา</td>
+      <td>100,000</td>
+      <td>-</td>
+      <td>ต้องให้ค่าทำขวัญผู้เสียหายไม่เกิน 30,000 หากร้องขอ</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>พูดจาไม่ให้เกียรติและโพสต์ในทางไม่ดีใส่ประชาชน</td>
+      <td>100,000</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>ทะเลาะกันภายในกรมตำรวจ</td>
+      <td>300,000/คน</td>
+      <td>30</td>
+      <td>ถ้าซ้ำถือว่าโทษวินัยร้ายแรง</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>ไม่ปฏิบัติหน้าที่หรือขัดคำสั่งผู้บังคับบัญชา</td>
+      <td>200,000</td>
+      <td>30</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>ใส่ชุดหน่วยงานหรือใช้รถหน่วยงานขณะออกเวร</td>
+      <td>200,000</td>
+      <td>30</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>เหม่อในเวลาเวรเกิน 15 นาที</td>
+      <td>50,000</td>
+      <td>-</td>
+      <td>ต้องแจ้งผู้บังคับบัญชาก่อนเหม่อ</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>ละเลยหน้าที่หรือเหม่อจนสลบ</td>
+      <td>150,000</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>ประพฤติตัวไม่เหมาะสม</td>
+      <td>100,000</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>ใช้เมนูอุ้ม F9 หน่วยงานในทางที่ผิด</td>
+      <td>200,000</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>ห้ามเผยเรื่องภายในหน่วยงาน</td>
+      <td>ใบแดง</td>
+      <td>-</td>
+      <td>เข้าข่ายตำรวจดำ</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>ห้ามใช้เมนูตำรวจยัดหรือโยกไอเท็มให้คนอื่น</td>
+      <td>300,000</td>
+      <td>-</td>
+      <td>ถ้ายึดอาวุธผิด ให้แจ้ง ผบ. ก่อน</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>เผยเรื่องภายในหน่วยงานให้นอกหน่วยงานทราบ</td>
+      <td>ใบแดง</td>
+      <td>-</td>
+      <td>เข้าข่ายตำรวจดำ</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>ห้ามลดเวลา/ค่าปรับให้ผู้ต้องหาโดยไม่มีเหตุ</td>
+      <td>ใบแดง</td>
+      <td>-</td>
+      <td>เข้าข่ายตำรวจดำ</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>พาประชาชนที่ไม่ใช่หน่วยงานมาปฏิบัติหน้าที่</td>
+      <td>ใบแดง</td>
+      <td>-</td>
+      <td>เข้าข่ายตำรวจดำ</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>ห้ามบอก GPS หรือเคสตำรวจให้ประชาชนหรือแก๊ง</td>
+      <td>ใบแดง</td>
+      <td>-</td>
+      <td>เข้าข่ายตำรวจดำ</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>เอื้อประโยชน์ให้แก๊ง</td>
+      <td>ใบแดง</td>
+      <td>-</td>
+      <td>เข้าข่ายตำรวจดำ</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>หมายเหตุเพิ่มเติม</h2>
+<ul>
+  <li>ถ้าทำผิดซ้ำเกิน 2 ครั้ง ค่าปรับอาจโดน x2 ไปเรื่อยๆ ตามดุลพินิจ ผบ. หรือ รอง ผบ.</li>
+  <li>ถ้าเจ้าหน้าที่ทำผิดวินัยลำดับ 1–12 ครบ 4 ครั้ง จะโดนสอบสวนว่าเข้าข่ายร้ายแรงหรือไม่</li>
+  <li>โทษวินัยต้องผ่านการตัดสินจากผู้บังคับบัญชาสูงสุดเท่านั้น</li>
+</ul>
+
 </main>
 
 <footer>Saber Town RP 2026 – Created by Pegasus Team </footer>
 
 <script>
+/* ===== Dropdown ===== */
 function closeAllDropdowns(){
   document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = 'none');
   document.querySelectorAll('.nav-group > a').forEach(a => {
@@ -84,16 +241,50 @@ function closeAllDropdowns(){
 
 function toggleMenu(menuId, btn){
   const menu = document.getElementById(menuId);
+  if (!menu) return;
+
   const willOpen = menu.style.display !== "block";
+
+  // ปิดอันอื่นก่อนเสมอ
   closeAllDropdowns();
+
+  // เปิด/ปิดอันที่กด
   menu.style.display = willOpen ? "block" : "none";
   btn.textContent = btn.textContent.replace(willOpen ? "▾" : "▴", willOpen ? "▴" : "▾");
 }
 
+// คลิกนอก nav -> ปิด dropdown
 document.addEventListener("click", (e) => {
   const insideNav = e.target.closest("nav");
-  if(!insideNav) closeAllDropdowns();
+  if (!insideNav) closeAllDropdowns();
 });
+
+/* ===== Header hide on scroll ===== */
+let lastY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  if (!header) return;
+
+  const y = window.scrollY;
+
+  // อยู่บนสุด: โชว์เสมอ
+  if (y < 40) {
+    header.classList.remove("header-hide");
+    lastY = y;
+    return;
+  }
+
+  // เลื่อนลง: ซ่อน / เลื่อนขึ้น: โชว์
+  if (y > lastY) {
+    header.classList.add("header-hide");
+    closeAllDropdowns(); // กันเมนูค้างตอนแถบหาย
+  } else {
+    header.classList.remove("header-hide");
+  }
+
+  lastY = y;
+}, { passive: true });
 </script>
 
 </body>

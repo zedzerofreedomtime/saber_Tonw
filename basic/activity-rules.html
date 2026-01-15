@@ -228,12 +228,35 @@
   </footer>
 
     <script>
+/* ===== Dropdown ===== */
+function closeAllDropdowns(){
+  document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = 'none');
+  document.querySelectorAll('.nav-group > a').forEach(a => {
+    a.textContent = a.textContent.replace("▴","▾");
+  });
+}
+
 function toggleMenu(menuId, btn){
   const menu = document.getElementById(menuId);
-  const isOpen = menu.style.display === "block";
-  menu.style.display = isOpen ? "none" : "block";
-  btn.innerHTML = btn.textContent.replace(isOpen ? "▴" : "▾", isOpen ? "▾" : "▴");
+  if (!menu) return;
+
+  const willOpen = menu.style.display !== "block";
+
+  // ปิดอันอื่นก่อนเสมอ
+  closeAllDropdowns();
+
+  // เปิด/ปิดอันที่กด
+  menu.style.display = willOpen ? "block" : "none";
+  btn.textContent = btn.textContent.replace(willOpen ? "▾" : "▴", willOpen ? "▴" : "▾");
 }
+
+// คลิกนอก nav -> ปิด dropdown
+document.addEventListener("click", (e) => {
+  const insideNav = e.target.closest("nav");
+  if (!insideNav) closeAllDropdowns();
+});
+
+/* ===== Header hide on scroll ===== */
 let lastY = window.scrollY;
 
 window.addEventListener("scroll", () => {
@@ -242,21 +265,25 @@ window.addEventListener("scroll", () => {
 
   const y = window.scrollY;
 
-  // ถ้าอยู่บนสุด ให้โชว์เสมอ
+  // อยู่บนสุด: โชว์เสมอ
   if (y < 40) {
     header.classList.remove("header-hide");
     lastY = y;
     return;
   }
 
-  // เลื่อนลง -> ซ่อน / เลื่อนขึ้น -> แสดง
-  if (y > lastY) header.classList.add("header-hide");
-  else header.classList.remove("header-hide");
+  // เลื่อนลง: ซ่อน / เลื่อนขึ้น: โชว์
+  if (y > lastY) {
+    header.classList.add("header-hide");
+    closeAllDropdowns(); // กันเมนูค้างตอนแถบหาย
+  } else {
+    header.classList.remove("header-hide");
+  }
 
   lastY = y;
 }, { passive: true });
-
 </script>
+
 
 </body>
 </html>

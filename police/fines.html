@@ -9,11 +9,11 @@
 <body>
 
 <header>
-  <div class="logo">
+ <div class="logo">
     <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif" class="logo-img">
   </div>
   <nav>
-  <a href="../index.html" class="current-page">หน้าแรก</a>
+  <a href="../index.html" >หน้าแรก</a>
 
   <!-- เกี่ยวกับเมือง -->
   <span class="nav-group">
@@ -38,7 +38,7 @@
 
   <!-- กฎตำรวจ -->
   <span class="nav-group">
-    <a href="javascript:void(0)" onclick="toggleMenu('policeMenu', this)">กฎตำรวจ ▾</a>
+    <a href="javascript:void(0)" class="current-page" onclick="toggleMenu('policeMenu', this)">กฎตำรวจ ▾</a>
     <span id="policeMenu" class="nav-dropdown">
       <a href="basic-police-rules.html">กฎพื้นฐานตำรวจ</a>
       <a href="duty-police.html">การปฏิบัติงาน</a>
@@ -63,18 +63,83 @@
 </header>
 
 <main class="content-section">
-  <h1>ค่าปรับตามกฎหมายเมือง</h1>
-  <ul>
-    <li>ฝ่าฝืนกฎจราจร: 1,000$ – 5,000$</li>
-    <li>ขัดขืนเจ้าพนักงาน: 5,000$ – 10,000$</li>
-    <li>พกพาอาวุธผิดกฎหมาย: 10,000$ ขึ้นไป</li>
-    <li>โทษปรับอาจเพิ่มตามสถานการณ์และบทโรลเพลย์</li>
-  </ul>
+ <h1>คดีประชาชน / คดีทั่วไป</h1>
+
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>ข้อ</th>
+      <th>รายละเอียด</th>
+      <th>จำคุก (นาที)</th>
+      <th>ปรับ / คน</th>
+      <th>หมายเหตุ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>ทะเลาะวิวาท</td><td>15</td><td>30,000</td><td>ปรับทั้ง 2 ฝ่าย</td></tr>
+    <tr><td>2</td><td>ปั่นป่วนก่อกวนหรือก่อความวุ่นวายให้หน่วยงาน</td><td>20</td><td>100,000</td><td>จับทำคดีทันที</td></tr>
+    <tr><td>3</td><td>สร้างความวุ่นวาย (การาจ / จุดงานฟาร์ม)</td><td>10</td><td>10,000</td><td>เสียงดัง บีบแตร เปิดเพลง เบิร์นยาง</td></tr>
+    <tr><td>4</td><td>พูดจาหยาบคาย ดูหมิ่น หรือสบประมาทชาวเมือง</td><td>30</td><td>10,000</td><td>เรียกค่าเสียหายได้ 10,000</td></tr>
+    <tr><td>5</td><td>ใส่หน้ากากในบริเวณ สน.</td><td>5</td><td>10,000</td><td>เห็นซึ่งหน้า ปรับทันที / ไม่ถอด = ปรับซ้ำ</td></tr>
+    <tr><td>6</td><td>แอบอ้างเป็นหน่วย</td><td>30</td><td>100,000</td><td>รวมหน่วยที่ไม่มีในประเทศ</td></tr>
+    <tr><td>7</td><td>ทำอนาจารในพื้นที่สาธารณะ</td><td>10</td><td>5,000</td><td>เปลือยกายทั้งบน-ล่าง</td></tr>
+    <tr><td>8</td><td>ถืออาวุธในพื้นที่สาธารณะ</td><td>10</td><td>10,000</td><td>ยกเว้นเรเบล</td></tr>
+    <tr><td>9</td><td>แสดงอาวุธในสถานที่หน่วยงาน</td><td>20</td><td>30,000</td><td>สน./รพ./สภา</td></tr>
+    <tr><td>10</td><td>พูดจาชักชวนไปทำสิ่งผิดกฎหมาย</td><td>-</td><td>5,000</td><td>ทั้งผู้ชวนและผู้ทำ</td></tr>
+    <tr><td>11</td><td>ก่อความวุ่นวายบริเวณหน่วยงาน</td><td>30</td><td>150,000</td><td>เสียงดัง เปิดเพลง เบิร์นยาง</td></tr>
+    <tr><td>12</td><td>ไม่ให้ความร่วมมือเจ้าหน้าที่</td><td>10</td><td>5,000</td><td>ไม่ฟังคำสั่ง</td></tr>
+    <tr><td>13</td><td>เหินรถเข้าไปในคุก</td><td>20</td><td>20,000</td><td>ทุกกรณี ไม่มีข้ออ้าง</td></tr>
+    <tr><td>14</td><td>ฉ้อโกง / บิดเงิน</td><td>30</td><td>100,000</td><td>คืนเงิน + ค่าเสียหาย</td></tr>
+    <tr><td>15</td><td>พยายามปล้น / ข่มขู่ / ทำให้เสียทรัพย์</td><td>60</td><td>100,000</td><td>-</td></tr>
+    <tr><td>16</td><td>ทำร้ายทรัพย์สินหน่วยงาน</td><td>10</td><td>10,000</td><td>-</td></tr>
+    <tr><td>17</td><td>รถ 2 ล้อทำงานดำ</td><td>30</td><td>30,000</td><td>รอบ 2 = ใบดำ</td></tr>
+    <tr><td>18</td><td>ขโมยรถประชาชน (มีสตอรี่)</td><td>10</td><td>10,000</td><td>-</td></tr>
+  </tbody>
+</table>
+
+<h1>ค่าปรับ – คดีของผิดกฎหมาย</h1>
+
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>ข้อ</th>
+      <th>รายละเอียด</th>
+      <th>จำคุก (นาที)</th>
+      <th>ปรับ / คน</th>
+      <th>หมายเหตุ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>เงินแดง</td><td>10</td><td>x2 ของที่มี</td><td>ยึดของกลาง</td></tr>
+    <tr><td>2</td><td>ปูนซีเมนต์</td><td>5/ถุง</td><td>2,000/ถุง</td><td>ยึดของกลาง</td></tr>
+    <tr><td>3</td><td>สายไฟ</td><td>5/เส้น</td><td>2,000/เส้น</td><td>ยึดของกลาง</td></tr>
+    <tr><td>4</td><td>พื้นที่สุ่มเสี่ยง</td><td>5</td><td>5,000</td><td>ค้นตัวได้ทันที</td></tr>
+    <tr><td>5</td><td>ใส่หน้ากากปิดบังใบหน้า</td><td>5</td><td>2,000</td><td>-</td></tr>
+    <tr><td>6</td><td>ผงโคเคน / กัญชา</td><td>5</td><td>2,000/ชิ้น</td><td>ยึดของกลาง</td></tr>
+    <tr><td>7</td><td>ประกันรถ</td><td>-</td><td>5,000</td><td>ยึดรถเพิ่ม 10,000</td></tr>
+    <tr><td>8</td><td>สมรู้ร่วมคิด</td><td>½ โทษ</td><td>½ โทษ</td><td>นั่งรถ / ช่วยเหลือ</td></tr>
+    <tr><td>9</td><td>ซุกของผิดกฎหมายในรถ</td><td>5</td><td>2,000</td><td>ยึดรถไม่มีประกัน</td></tr>
+    <tr><td>10</td><td>วางเพลิง</td><td>15</td><td>30,000</td><td>-</td></tr>
+    <tr><td>11</td><td>ทำลายหลักฐาน / ยัดของ</td><td>x2</td><td>x2</td><td>-</td></tr>
+    <tr><td>12</td><td>จกสายไฟหน้าสน.</td><td>5</td><td>2,000</td><td>จับทันที</td></tr>
+  </tbody>
+</table>
+
+<h1>หมายเหตุสำคัญ</h1>
+<ul>
+  <li>หากเจ้าหน้าที่ทำงานดำ<br>
+    – ขณะเข้าเวร: โทษ x10<br>
+    – ขณะออกเวร: โทษ x2
+  </li>
+  <li>มีผลกับทุกคดีโดยไม่ยกเว้น</li>
+</ul>
+
 </main>
 
 <footer>Saber Town RP 2026 – Created by Pegasus Team </footer>
 
 <script>
+/* ===== Dropdown ===== */
 function closeAllDropdowns(){
   document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = 'none');
   document.querySelectorAll('.nav-group > a').forEach(a => {
@@ -84,16 +149,50 @@ function closeAllDropdowns(){
 
 function toggleMenu(menuId, btn){
   const menu = document.getElementById(menuId);
+  if (!menu) return;
+
   const willOpen = menu.style.display !== "block";
+
+  // ปิดอันอื่นก่อนเสมอ
   closeAllDropdowns();
+
+  // เปิด/ปิดอันที่กด
   menu.style.display = willOpen ? "block" : "none";
   btn.textContent = btn.textContent.replace(willOpen ? "▾" : "▴", willOpen ? "▴" : "▾");
 }
 
+// คลิกนอก nav -> ปิด dropdown
 document.addEventListener("click", (e) => {
   const insideNav = e.target.closest("nav");
-  if(!insideNav) closeAllDropdowns();
+  if (!insideNav) closeAllDropdowns();
 });
+
+/* ===== Header hide on scroll ===== */
+let lastY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  if (!header) return;
+
+  const y = window.scrollY;
+
+  // อยู่บนสุด: โชว์เสมอ
+  if (y < 40) {
+    header.classList.remove("header-hide");
+    lastY = y;
+    return;
+  }
+
+  // เลื่อนลง: ซ่อน / เลื่อนขึ้น: โชว์
+  if (y > lastY) {
+    header.classList.add("header-hide");
+    closeAllDropdowns(); // กันเมนูค้างตอนแถบหาย
+  } else {
+    header.classList.remove("header-hide");
+  }
+
+  lastY = y;
+}, { passive: true });
 </script>
 
 </body>

@@ -12,7 +12,7 @@
     <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif" class="logo-img">
   </div>
    <nav>
-  <a href="index.html" class="current-page">หน้าแรก</a>
+  <a href="../index.html" >หน้าแรก</a>
 
   <!-- เกี่ยวกับเมือง -->
   <span class="nav-group">
@@ -26,12 +26,12 @@
 
   <!-- กฎแพทย์ -->
   <span class="nav-group">
-    <a href="javascript:void(0)" onclick="toggleMenu('medicMenu', this)">กฎแพทย์ ▾</a>
+    <a href="javascript:void(0)" class="current-page" onclick="toggleMenu('medicMenu', this)">กฎแพทย์ ▾</a>
     <span id="medicMenu" class="nav-dropdown">
-      <a href="doctor/doctor-rules.html">กฎระเบียบแพทย์</a>
-      <a href="doctor/duty-rules.html">กฎการปฏิบัติหน้าที่</a>
-      <a href="doctor/penalty-blacklist.html">กฎการปรับ/Blacklist</a>
-      <a href="doctor/medical-fees.html">ค่ารักษาพยาบาล</a>
+      <a href="doctor-rules.html">กฎระเบียบแพทย์</a>
+      <a href="duty-rules.html">กฎการปฏิบัติหน้าที่</a>
+      <a href="penalty-blacklist.html">กฎการปรับ/Blacklist</a>
+      <a href="medical-fees.html">ค่ารักษาพยาบาล</a>
     </span>
   </span>
 
@@ -63,17 +63,136 @@
 
 <main class="content-section">
   <h1>กฎระเบียบแพทย์</h1>
-  <ul>
-    <li>แพทย์ต้องเคารพประชาชนทุกคนโดยไม่เลือกปฏิบัติ</li>
-    <li>ห้ามใช้อำนาจหน้าที่ในทางที่ผิด</li>
-    <li>ต้องรักษาความลับของผู้ป่วยทุกกรณี</li>
-    <li>ห้ามเข้าร่วมกิจกรรมผิดกฎหมายขณะสวมบทบาทแพทย์</li>
-  </ul>
+
+<p>
+  กฎระเบียบแพทย์ถูกจัดทำขึ้นเพื่อให้การปฏิบัติหน้าที่ของหน่วยแพทย์เป็นไปอย่างมีระเบียบ
+  ยุติธรรม และสมจริง แพทย์ทุกนายต้องปฏิบัติตามอย่างเคร่งครัด
+</p>
+
+<h2>กฎทั่วไปของหน่วยแพทย์</h2>
+
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>ข้อ</th>
+      <th>รายการ</th>
+      <th>หมายเหตุ</th>
+      <th>โทษ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>ใส่ [SZMD] หน้าชื่อใน Steam ทุกครั้ง และชื่อต้องตรงกับบัตรประชาชน</td><td>ต้องเว้นวรรคหน้าชื่อ</td><td>-</td></tr>
+    <tr><td>2</td><td>เมื่อเข้าประเทศแล้วต้องเข้าวิทยุสื่อสารทุกครั้ง</td><td>-</td><td>ปรับ 50k / ครั้ง</td></tr>
+    <tr><td>3</td><td><strong>[ห้าม]</strong> แพทย์เปิดเผยข้อมูลภายในหน่วยงานให้คนนอกทราบ</td><td>-</td><td>ปรับ 500k</td></tr>
+    <tr><td>4</td><td>แพทย์ต้องใส่ชุดแพทย์ตลอดการเข้าเวร</td><td>ศุกร์–อาทิตย์ ใส่ฟรีสไตล์ได้ แต่ต้องมีปลอกแขน</td><td>-</td></tr>
+    <tr><td>5</td><td>เข้าเวรต้องอยู่ประจำที่โรงพยาบาล</td><td>ต้องมีแพทย์หน้าโรงพยาบาลอย่างน้อย 3 คน</td><td>-</td></tr>
+    <tr><td>6</td><td>แพทย์ต้องพกอุปกรณ์การแพทย์ตลอดเวลา</td><td>อุปกรณ์ไม่ครบจนงานล่าช้า</td><td>โทษวินัยตามหน่วยงาน</td></tr>
+    <tr><td>7</td><td>แพทย์ต้องมีมนุษยสัมพันธ์ที่ดี พูดจาสุภาพ</td><td>-</td><td>-</td></tr>
+    <tr><td>8</td><td><strong>[ห้าม]</strong> แพทย์ขึ้นรถไปกับประชาชนและแก๊ง</td><td>ยกเว้นออกเวร / ลาพักร้อน</td><td>ปรับ 200k</td></tr>
+    <tr><td>9</td><td>แพทย์สามารถไปส่งประชาชนได้</td><td>ยกเว้นแก๊ง ส่งได้เฉพาะ รพ. ใกล้ที่สุด</td><td>-</td></tr>
+    <tr><td>10</td><td>สัญญาแพทย์ 30 วัน</td><td>ออกก่อนกำหนดต้องรีตัว</td><td>ปรับ 500k</td></tr>
+    <tr><td>11</td><td>แพทย์ห้ามนำรถส่วนตัวออกไปรับเคส</td><td>-</td><td>ตักเตือน / ปรับ 50k</td></tr>
+    <tr><td>12</td><td>รับเคสเสร็จต้องเก็บรถทันที</td><td>รถหลุดถือว่าผิดวินัย</td><td>โทษวินัย</td></tr>
+    <tr><td>13</td><td><strong>[ห้าม]</strong> เลือกรักษาฝ่ายใดฝ่ายหนึ่ง</td><td>แพทย์ต้องเป็นกลาง</td><td>-</td></tr>
+    <tr><td>14</td><td><strong>[ห้าม]</strong> ใช้ช่องโหว่กฎเพื่อผลประโยชน์</td><td>อ้างว่าไม่เขียนไว้ไม่ได้</td><td>ปลดทันที / ปรับ 1M</td></tr>
+    <tr><td>15</td><td>เคสทะเลาะวิวาท ต้องชุบที่โรงพยาบาลเท่านั้น</td><td>-</td><td>-</td></tr>
+    <tr><td>16</td><td>ลาเกิน 3 วันไม่มีการเคลื่อนไหว</td><td>เกิน 2 อาทิตย์ปลด</td><td>ตามดุลยพินิจ</td></tr>
+    <tr><td>17</td><td>เหม่อ / ไปเรเบลแดง ต้องแจ้งทุกครั้ง</td><td>ห้ามเกิน 15 นาที</td><td>โทษวินัย</td></tr>
+    <tr><td>18</td><td><strong>[ห้าม]</strong> พาวน์รถมั่วโดยไม่มีเหตุจำเป็น</td><td>-</td><td>ตักเตือน</td></tr>
+    <tr><td>19</td><td><strong>[ห้าม]</strong> นำฮอน้ำไปติดอาวุธสงคราม</td><td>-</td><td>ปรับ 500k</td></tr>
+    <tr><td>20</td><td><strong>[ห้าม]</strong> แทงพนันทุกชนิด</td><td>ยกเว้นโป๊กเกอร์ / บาคาร่า นอกเวลาเวร</td><td>ปรับ 500k</td></tr>
+    <tr><td>21</td><td><strong>[ห้าม]</strong> ใช้รถหน่วยงานเพื่อผลประโยชน์ส่วนตัว</td><td>มีข้อยกเว้นตามที่กำหนด</td><td>ใบเหลือง / ปรับ 3M</td></tr>
+    <tr><td>22</td><td><strong>[ห้าม]</strong> รับฝากของหรืออำนวยความสะดวกให้แก๊ง</td><td>หากตรวจพบเป็นหน่วยงานดำ</td><td>ปลดทันที / 2M</td></tr>
+    <tr><td>23</td><td>แพทย์ทะเลาะกันเองจนกระทบงาน</td><td>-</td><td>ปลดทันที</td></tr>
+    <tr><td>24</td><td>ลาพักร้อนแล้วไม่กลับมารับยศภายใน 24 ชม.</td><td>-</td><td>ปลดทันที</td></tr>
+    <tr><td>25</td><td>ใช้ภาพจากกล้องติดตัวเป็นหลักฐานได้</td><td>F12 / Screenshot</td><td>-</td></tr>
+    <tr><td>26</td><td>พีคไทม์ต้องเข้าเวรทุกครั้ง</td><td>มีสตอรี่ห้ามออกเวร</td><td>โทษวินัย</td></tr>
+    <tr><td>27</td><td><strong>[ห้าม]</strong> รับเคสที่ไม่ได้กดขอความช่วยเหลือ</td><td>-</td><td>-</td></tr>
+    <tr><td>28</td><td>รถแพทย์ห้ามติดฟิล์มทึบ</td><td>ใช้ฟิล์มใสเท่านั้น</td><td>ปรับ 100k</td></tr>
+    <tr><td>29</td><td><strong>[ห้าม]</strong> โพสซื้อขาย / งานดำ ระหว่างเข้าเวร</td><td>-</td><td>ปรับ 100k</td></tr>
+    <tr><td>30</td><td>แพทย์ต้องแต่งกายตามระเบียบหน่วยงาน</td><td>-</td><td>-</td></tr>
+    <tr><td>31</td><td>ต้องเข้าวิทยุสื่อสารขณะปฏิบัติหน้าที่</td><td>-</td><td>-</td></tr>
+    <tr><td>32</td><td><strong>[ห้าม]</strong> อุ้มหน่วยงานหรือบุคคลอื่นไปรับเคส</td><td>ยกเว้นหน่วยงานเดียวกัน</td><td>ปรับ 100k</td></tr>
+    <tr><td>33</td><td><strong>[ห้าม]</strong> เล่นกิจกรรมประเทศช่วงพีคไทม์</td><td>ยกเว้นแอร์ดรอปหน่วยงาน</td><td>โทษวินัย</td></tr>
+    <tr><td>34</td><td>ออกไปรับเคสต้องเปิดไซเรนทุกครั้ง</td><td>-</td><td>-</td></tr>
+    <tr><td>35</td><td>คนแรกเข้าเวรเปิด รพ. / คนสุดท้ายปิด</td><td>-</td><td>-</td></tr>
+    <tr><td>36</td><td>แพทย์สามารถฉีดยานอกพื้นที่ได้</td><td>-</td><td>-</td></tr>
+    <tr><td>37</td><td><strong>[ห้าม]</strong> ทำงานขาวขณะเข้าเวร</td><td>-</td><td>โทษวินัย</td></tr>
+    <tr><td>38</td><td>สามารถร้องเรียนแพทย์ได้</td><td>ต้องมีหลักฐาน</td><td>-</td></tr>
+    <tr><td>39</td><td>แพทย์เกิน 10 คน ต้องมี OP</td><td>ไม่มี OP มีโทษ</td><td>ปรับ</td></tr>
+    <tr><td>40</td><td>ย้ายหน่วยงานได้เมื่อเป็นนักเรียนแพทย์ครบ 7 วัน</td><td>ย้ายได้ครั้งเดียว</td><td>-</td></tr>
+    <tr><td>41</td><td>แพทย์เข้าเวรไม่ถึง 3 คน ระบบจะเกิดเคสเอง</td><td>ภายใน 5 นาที</td><td>-</td></tr>
+    <tr><td>42</td><td>ฉีดยานอกพื้นที่ได้</td><td>ยกเว้นประชาชนหรือแก๊งที่มีสตอรี่</td><td>-</td></tr>
+    <tr><td>43</td><td><strong>[ห้าม]</strong> ทำยานพาหนะหน่วยงานหลุด</td><td>-</td><td>ปรับ 100k / ครั้ง</td></tr>
+
+<table class="rules-table">
+  <thead>
+    <h2>เงื่อนไขการออกเวร / การลางาน</h2>
+    <tr>
+      <th>ข้อ</th>
+      <th>รายการ</th>
+      <th>หมายเหตุ</th>
+      <th>โทษ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td><strong>[ข้อกำหนด]</strong> การลา OC ต้องลงลาก่อนเวลา 00:00 ของวันที่จะลา</td>
+      <td>หากลงลาเกินเวลา จะถือเป็นขาดงานทันที</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>ยศแพทย์ขึ้นไปเท่านั้นจึงสามารถออกเวรได้</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>ออกเวรได้เฉพาะช่วงนอกพีคไทม์</td>
+      <td>เวลา 00:00–06:00 และ 06:00–18:00</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>หากมีสตอรี่เกิดขึ้นในประเทศ</td>
+      <td>บังคับเข้าเวรทุกกรณี</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>ไม่ปฏิบัติตามเงื่อนไขการออกเวร</td>
+      <td>-</td>
+      <td>ปรับ 100,000 / เกิน 2 ครั้ง พิจารณาปลดทันที</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>การออกเวรต้องมีแพทย์ยืนในประเทศอย่างน้อย 3 คน</td>
+      <td>หากแพทย์ไม่ถึง 3 คน ต้องรีบกลับมาเข้าเวรทันที</td>
+      <td>โทษวินัยละเลยการปฏิบัติหน้าที่ 100,000</td>
+    </tr>
+  </tbody>
+</table>
+
+  </tbody>
+</table>
+
+<p><strong>หมายเหตุ:</strong> ในเขตโรงพยาบาล สายตาและการได้ยินของแพทย์ถือเป็น 360 องศา</p>
+
+</table>
+
 </main>
 
 <footer>Saber Town RP 2026 – Created by Pegasus Team </footer>
 
 <script>
+/* ===== Dropdown ===== */
 function closeAllDropdowns(){
   document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = 'none');
   document.querySelectorAll('.nav-group > a').forEach(a => {
@@ -83,16 +202,50 @@ function closeAllDropdowns(){
 
 function toggleMenu(menuId, btn){
   const menu = document.getElementById(menuId);
+  if (!menu) return;
+
   const willOpen = menu.style.display !== "block";
+
+  // ปิดอันอื่นก่อนเสมอ
   closeAllDropdowns();
+
+  // เปิด/ปิดอันที่กด
   menu.style.display = willOpen ? "block" : "none";
   btn.textContent = btn.textContent.replace(willOpen ? "▾" : "▴", willOpen ? "▴" : "▾");
 }
 
+// คลิกนอก nav -> ปิด dropdown
 document.addEventListener("click", (e) => {
   const insideNav = e.target.closest("nav");
-  if(!insideNav) closeAllDropdowns();
+  if (!insideNav) closeAllDropdowns();
 });
+
+/* ===== Header hide on scroll ===== */
+let lastY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  if (!header) return;
+
+  const y = window.scrollY;
+
+  // อยู่บนสุด: โชว์เสมอ
+  if (y < 40) {
+    header.classList.remove("header-hide");
+    lastY = y;
+    return;
+  }
+
+  // เลื่อนลง: ซ่อน / เลื่อนขึ้น: โชว์
+  if (y > lastY) {
+    header.classList.add("header-hide");
+    closeAllDropdowns(); // กันเมนูค้างตอนแถบหาย
+  } else {
+    header.classList.remove("header-hide");
+  }
+
+  lastY = y;
+}, { passive: true });
 </script>
 
 </body>

@@ -11,8 +11,8 @@
   <div class="logo">
     <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif" class="logo-img">
   </div>
- <nav>
-  <a href="index.html" class="current-page">หน้าแรก</a>
+   <nav>
+  <a href="../index.html" >หน้าแรก</a>
 
   <!-- เกี่ยวกับเมือง -->
   <span class="nav-group">
@@ -26,12 +26,12 @@
 
   <!-- กฎแพทย์ -->
   <span class="nav-group">
-    <a href="javascript:void(0)" onclick="toggleMenu('medicMenu', this)">กฎแพทย์ ▾</a>
+    <a href="javascript:void(0)" class="current-page" onclick="toggleMenu('medicMenu', this)">กฎแพทย์ ▾</a>
     <span id="medicMenu" class="nav-dropdown">
-      <a href="doctor/doctor-rules.html">กฎระเบียบแพทย์</a>
-      <a href="doctor/duty-rules.html">กฎการปฏิบัติหน้าที่</a>
-      <a href="doctor/penalty-blacklist.html">กฎการปรับ/Blacklist</a>
-      <a href="doctor/medical-fees.html">ค่ารักษาพยาบาล</a>
+      <a href="doctor-rules.html">กฎระเบียบแพทย์</a>
+      <a href="duty-rules.html">กฎการปฏิบัติหน้าที่</a>
+      <a href="penalty-blacklist.html">กฎการปรับ/Blacklist</a>
+      <a href="medical-fees.html">ค่ารักษาพยาบาล</a>
     </span>
   </span>
 
@@ -62,18 +62,111 @@
 </header>
 
 <main class="content-section">
-  <h1>ค่ารักษาพยาบาล</h1>
-  <ul>
-    <li>รักษาทั่วไป: 2,000$</li>
-    <li>อาการสาหัส / ICU: 5,000$</li>
-    <li>ชุบชีวิต (Revive): 10,000$</li>
-    <li>เจ้าหน้าที่รัฐอาจได้รับส่วนลดตามประกาศ</li>
-  </ul>
+ <h1>อัตราค่ารักษาพยาบาล</h1>
+
+<p>
+  อัตราค่ารักษาพยาบาลของเมือง <strong>Saber Town</strong>
+  ถูกกำหนดขึ้นเพื่อให้เป็นมาตรฐานเดียวกัน
+  แพทย์ทุกนายต้องคิดค่ารักษาตามตารางด้านล่างอย่างเคร่งครัด
+</p>
+
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>รายการ</th>
+      <th>ค่ารักษา</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ฉีดยา – เข็มเล็ก (เพิ่มเลือด 50%)</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>ฉีดยา – เข็มใหญ่ (เพิ่มเลือด 100%)</td>
+      <td>1,000</td>
+    </tr>
+    <tr>
+      <td>
+        ปั้มหัวใจ – เขตในเมือง<br>
+        <small>(พื้นที่สีเทา, เขต TAR, พื้นที่ สน.)</small>
+      </td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>
+        ปั้มหัวใจ – เขตนอกเมือง<br>
+        <small>(นอกเขตเมืองจนถึงก่อนเขตทะเลทราย)</small>
+      </td>
+      <td>1,000</td>
+    </tr>
+    <tr>
+      <td>
+        ปั้มหัวใจ – เขตเมืองบน<br>
+        <small>(เขตทะเลทรายขึ้นไป)</small>
+      </td>
+      <td>1,500</td>
+    </tr>
+    <tr>
+      <td>
+        ปั้มหัวใจ – พื้นที่เข้าถึงยาก<br>
+        <small>(ภูเขา, ตึกสูง, ในน้ำ)</small>
+      </td>
+      <td>2,500</td>
+    </tr>
+    <tr>
+      <td>
+        ปั้มหัวใจ – พื้นที่สุ่มเสี่ยง / ทะเลาะวิวาทต่อหน้าหมอ<br>
+        <small>(เรเบล, จุดงานดำ, คุก)</small>
+      </td>
+      <td>3,500</td>
+    </tr>
+    <tr>
+      <td>บัตรศัลกรรม</td>
+      <td>100,000</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>หมายเหตุ</h2>
+
+<ul>
+  <li>
+    หากเรียกเคสแพทย์แล้วมีการใช้ AED ปั้มหัวใจกันเอง
+    หรือมีการเคลื่อนย้ายผู้สลบก่อนแพทย์ถึง
+    ค่ารักษาจะถูกคิด <strong>x3 จากราคาปกติ</strong>
+    <strong>(ยกเว้นเคสสตอรี่)</strong>
+  </li>
+  <li>
+    หน่วยงานที่ไม่ได้เข้าเวร, ไม่สวมชุดหน่วยงาน
+    หรือไม่มีอุปกรณ์แสดงสัญลักษณ์ของหน่วยงาน
+    จะถูกคิดค่ารักษาในอัตราประชาชน
+  </li>
+  <li>
+    แก๊งที่ไม่สวมชุด หรือไม่มีอุปกรณ์แสดงสัญลักษณ์แก๊ง
+    จะถูกคิดค่ารักษาในอัตราประชาชนเช่นเดียวกัน
+  </li>
+</ul>
+
+<h2>ขอบเขตการรักษา</h2>
+
+<p>
+  แพทย์จะให้การรักษาตามขอบเขตพื้นที่
+  ความปลอดภัย และกฎการปฏิบัติหน้าที่แพทย์
+  หากพื้นที่ไม่ปลอดภัย แพทย์สามารถปฏิเสธการรักษาได้
+</p>
+
+<div class="image-center">
+  <img src="https://img5.pic.in.th/file/secure-sv1/imaged671183aa482f230.png"
+       alt="ขอบเขตการรักษา">
+</div>
+
 </main>
 
 <footer>Saber Town RP 2026 – Created by Pegasus Team </footer>
 
 <script>
+/* ===== Dropdown ===== */
 function closeAllDropdowns(){
   document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = 'none');
   document.querySelectorAll('.nav-group > a').forEach(a => {
@@ -83,16 +176,50 @@ function closeAllDropdowns(){
 
 function toggleMenu(menuId, btn){
   const menu = document.getElementById(menuId);
+  if (!menu) return;
+
   const willOpen = menu.style.display !== "block";
+
+  // ปิดอันอื่นก่อนเสมอ
   closeAllDropdowns();
+
+  // เปิด/ปิดอันที่กด
   menu.style.display = willOpen ? "block" : "none";
   btn.textContent = btn.textContent.replace(willOpen ? "▾" : "▴", willOpen ? "▴" : "▾");
 }
 
+// คลิกนอก nav -> ปิด dropdown
 document.addEventListener("click", (e) => {
   const insideNav = e.target.closest("nav");
-  if(!insideNav) closeAllDropdowns();
+  if (!insideNav) closeAllDropdowns();
 });
+
+/* ===== Header hide on scroll ===== */
+let lastY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  if (!header) return;
+
+  const y = window.scrollY;
+
+  // อยู่บนสุด: โชว์เสมอ
+  if (y < 40) {
+    header.classList.remove("header-hide");
+    lastY = y;
+    return;
+  }
+
+  // เลื่อนลง: ซ่อน / เลื่อนขึ้น: โชว์
+  if (y > lastY) {
+    header.classList.add("header-hide");
+    closeAllDropdowns(); // กันเมนูค้างตอนแถบหาย
+  } else {
+    header.classList.remove("header-hide");
+  }
+
+  lastY = y;
+}, { passive: true });
 </script>
 
 </body>

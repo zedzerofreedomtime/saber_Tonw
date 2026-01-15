@@ -11,19 +11,19 @@
 <body>
 
 <header>
-  <div class="logo">
+   <div class="logo">
     <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif" class="logo-img">
   </div>
-  <nav>
-  <a href="index.html" class="current-page">หน้าแรก</a>
+ <nav>
+  <a href="../index.html" >หน้าแรก</a>
 
   <!-- เกี่ยวกับเมือง -->
   <span class="nav-group">
     <a href="javascript:void(0)" onclick="toggleMenu('aboutMenu', this)">เกี่ยวกับเมือง ▾</a>
     <span id="aboutMenu" class="nav-dropdown">
-      <a href="basic/basic_rules.html">กฎพื้นฐาน</a>
-      <a href="basic/city-rules.html">กฎเมือง</a>
-      <a href="basic/activity-rules.html">กฎกิจกรรม</a>
+      <a href="../basic/basic_rules.html">กฎพื้นฐาน</a>
+      <a href="../basic/city-rules.html">กฎเมือง</a>
+      <a href=".../basic/activity-rules.html">กฎกิจกรรม</a>
     </span>
   </span>
 
@@ -31,10 +31,10 @@
   <span class="nav-group">
     <a href="javascript:void(0)" onclick="toggleMenu('medicMenu', this)">กฎแพทย์ ▾</a>
     <span id="medicMenu" class="nav-dropdown">
-      <a href="doctor/doctor-rules.html">กฎระเบียบแพทย์</a>
-      <a href="doctor/duty-rules.html">กฎการปฏิบัติหน้าที่</a>
-      <a href="doctor/penalty-blacklist.html">กฎการปรับ/Blacklist</a>
-      <a href="doctor/medical-fees.html">ค่ารักษาพยาบาล</a>
+      <a href="../doctor/doctor-rules.html">กฎระเบียบแพทย์</a>
+      <a href="../doctor/duty-rules.html">กฎการปฏิบัติหน้าที่</a>
+      <a href="../doctor/penalty-blacklist.html">กฎการปรับ/Blacklist</a>
+      <a href="../doctor/medical-fees.html">ค่ารักษาพยาบาล</a>
     </span>
   </span>
 
@@ -42,41 +42,82 @@
   <span class="nav-group">
     <a href="javascript:void(0)" onclick="toggleMenu('policeMenu', this)">กฎตำรวจ ▾</a>
     <span id="policeMenu" class="nav-dropdown">
-      <a href="police/basic-police-rules.html">กฎพื้นฐานตำรวจ</a>
-      <a href="police/duty-police.html">การปฏิบัติงาน</a>
-      <a href="police/warrant.html">หมายเรียก / หมายจับ</a>
-      <a href="police/discipline.html">โทษวินัยตำรวจ</a>
-      <a href="police/fines.html">ค่าปรับ</a>
+      <a href="../police/basic-police-rules.html">กฎพื้นฐานตำรวจ</a>
+      <a href="../police/duty-police.html">การปฏิบัติงาน</a>
+      <a href="../police/warrant.html">หมายเรียก / หมายจับ</a>
+      <a href="../police/discipline.html">โทษวินัยตำรวจ</a>
+      <a href="../police/fines.html">ค่าปรับ</a>
     </span>
   </span>
 
   <!-- กฎสภา -->
   <span class="nav-group">
-    <a href="javascript:void(0)" onclick="toggleMenu('councilMenu', this)">กฎสภา ▾</a>
+    <a href="javascript:void(0)" class="current-page" onclick="toggleMenu('councilMenu', this)">กฎสภา ▾</a>
     <span id="councilMenu" class="nav-dropdown">
-      <a href="council/council-rules.html">กฎสภา</a>
-      <a href="council/gang-rules.html">แก๊ง</a>
-      <a href="council/council-fees.html">ค่าใช้จ่ายธุรกรรมสภา</a>
-      <a href="council/council-story.html">สตอรี่</a>
-      <a href="council/contracts.html">การทำสัญญา</a>
+      <a href="council-rules.html">กฎสภา</a>
+      <a href="gang-rules.html">แก๊ง</a>
+      <a href="council-fees.html">ค่าใช้จ่ายธุรกรรมสภา</a>
+      <a href="council-story.html">สตอรี่</a>
+      <a href="contracts.html">การทำสัญญา</a>
     </span>
   </span>
 </nav>
 </header>
 
 <main class="content-section">
-  <h1>การทำสัญญากับสภา</h1>
-  <ul>
-    <li>สัญญาทุกฉบับต้องได้รับการรับรองจากสภา</li>
-    <li>ต้องระบุเงื่อนไข ระยะเวลา และบทลงโทษให้ชัดเจน</li>
-    <li>การละเมิดสัญญาจะถูกพิจารณาโทษตามข้อกำหนด</li>
-    <li>สภามีสิทธิยกเลิกสัญญาในกรณีฉุกเฉิน</li>
-  </ul>
+  <h1>🏛️ กฎข้อบังคับของ Olympian และรูปแบบการดำเนินงาน</h1>
+
+<p><strong>เวลาทำการ:</strong> 18.00 – 00.00 น.</p>
+
+<h2>📝 การทำสัญญา</h2>
+
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>ลำดับ</th>
+      <th>รายละเอียด</th>
+      <th>หมายเหตุ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>แก๊งสามารถติดต่อทำสัญญากับทางสภาได้</td>
+      <td>ค่าธุรกรรม 20,000 $ / ฉบับ</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>หากแก๊งต้องการฉีกสัญญา ต้องชำระค่าฉีกสัญญา</td>
+      <td>1,000,000 $ / ฉบับ</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        ประเภทสัญญาที่สภารับทำ ได้แก่
+        <ul>
+          <li>สัญญากู้ยืมทั่วไป</li>
+          <li>สัญญาระหว่างแก๊งกับแก๊ง</li>
+          <li>สัญญาการขึ้นอาวุธหรือสวัสดิการแก๊ง</li>
+          <li>สัญญาภายในแก๊ง</li>
+          <li>สัญญาแก๊งกับประชาชน</li>
+        </ul>
+      </td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>สัญญาจะมีผลบังคับใช้จนกว่าทั้ง 2 ฝ่ายจะมาขอฉีกสัญญากับทางสภาโดยตรง</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
 </main>
 
 <footer>Saber Town RP 2026 – Created by Pegasus Team </footer>
 
 <script>
+/* ===== Dropdown ===== */
 function closeAllDropdowns(){
   document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = 'none');
   document.querySelectorAll('.nav-group > a').forEach(a => {
@@ -86,16 +127,50 @@ function closeAllDropdowns(){
 
 function toggleMenu(menuId, btn){
   const menu = document.getElementById(menuId);
+  if (!menu) return;
+
   const willOpen = menu.style.display !== "block";
+
+  // ปิดอันอื่นก่อนเสมอ
   closeAllDropdowns();
+
+  // เปิด/ปิดอันที่กด
   menu.style.display = willOpen ? "block" : "none";
   btn.textContent = btn.textContent.replace(willOpen ? "▾" : "▴", willOpen ? "▴" : "▾");
 }
 
+// คลิกนอก nav -> ปิด dropdown
 document.addEventListener("click", (e) => {
   const insideNav = e.target.closest("nav");
-  if(!insideNav) closeAllDropdowns();
+  if (!insideNav) closeAllDropdowns();
 });
+
+/* ===== Header hide on scroll ===== */
+let lastY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  if (!header) return;
+
+  const y = window.scrollY;
+
+  // อยู่บนสุด: โชว์เสมอ
+  if (y < 40) {
+    header.classList.remove("header-hide");
+    lastY = y;
+    return;
+  }
+
+  // เลื่อนลง: ซ่อน / เลื่อนขึ้น: โชว์
+  if (y > lastY) {
+    header.classList.add("header-hide");
+    closeAllDropdowns(); // กันเมนูค้างตอนแถบหาย
+  } else {
+    header.classList.remove("header-hide");
+  }
+
+  lastY = y;
+}, { passive: true });
 </script>
 
 </body>

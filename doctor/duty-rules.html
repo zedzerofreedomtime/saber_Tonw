@@ -8,11 +8,11 @@
 </head>
 <body>
 <header>
-  <div class="logo">
+ <div class="logo">
     <img src="https://img2.pic.in.th/pic/banner-SB-no-bg.gif" class="logo-img">
   </div>
- <nav>
-  <a href="index.html" class="current-page">หน้าแรก</a>
+   <nav>
+  <a href="../index.html" >หน้าแรก</a>
 
   <!-- เกี่ยวกับเมือง -->
   <span class="nav-group">
@@ -26,12 +26,12 @@
 
   <!-- กฎแพทย์ -->
   <span class="nav-group">
-    <a href="javascript:void(0)" onclick="toggleMenu('medicMenu', this)">กฎแพทย์ ▾</a>
+    <a href="javascript:void(0)" class="current-page" onclick="toggleMenu('medicMenu', this)">กฎแพทย์ ▾</a>
     <span id="medicMenu" class="nav-dropdown">
-      <a href="doctor/doctor-rules.html">กฎระเบียบแพทย์</a>
-      <a href="doctor/duty-rules.html">กฎการปฏิบัติหน้าที่</a>
-      <a href="doctor/penalty-blacklist.html">กฎการปรับ/Blacklist</a>
-      <a href="doctor/medical-fees.html">ค่ารักษาพยาบาล</a>
+      <a href="doctor-rules.html">กฎระเบียบแพทย์</a>
+      <a href="duty-rules.html">กฎการปฏิบัติหน้าที่</a>
+      <a href="penalty-blacklist.html">กฎการปรับ/Blacklist</a>
+      <a href="medical-fees.html">ค่ารักษาพยาบาล</a>
     </span>
   </span>
 
@@ -63,17 +63,104 @@
 
 <main class="content-section">
   <h1>กฎการปฏิบัติหน้าที่แพทย์</h1>
-  <ul>
-    <li>ต้องสวมชุดแพทย์ขณะปฏิบัติหน้าที่</li>
-    <li>ห้ามละเลยผู้บาดเจ็บโดยไม่มีเหตุผล</li>
-    <li>สามารถปฏิเสธการรักษาได้ หากสถานการณ์ไม่ปลอดภัย</li>
-    <li>ต้องรายงานเหตุผิดปกติต่อหัวหน้าหน่วยแพทย์</li>
-  </ul>
+
+<p>
+  กฎการปฏิบัติหน้าที่แพทย์ ถูกจัดทำขึ้นเพื่อควบคุมการทำงานของหน่วยแพทย์
+  ให้เป็นไปอย่างมีระเบียบ ปลอดภัย และสอดคล้องกับบทบาท RolePlay ของเมือง
+</p>
+
+<h2>เคส Rebel / เคสกักศพ</h2>
+
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>ข้อ</th>
+      <th>รายการ</th>
+      <th>หมายเหตุ</th>
+      <th>โทษ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>แพทย์ยศสูงพิจารณาให้แพทย์ไปขอคืนผู้สลบ หากไม่ใช่เคสตีกันให้ประกาศขอศพและชุบได้ตามปกติ</td><td>-</td><td>-</td></tr>
+    <tr><td>2</td><td>หากตำรวจไม่เพียงพอ แพทย์สามารถขอคืนศพได้ทันที</td><td>อ้างอิงกฎประเทศหมวดกฎสตอรี่</td><td>-</td></tr>
+    <tr><td>3</td><td>หากเป็นเคสตีกัน แพทย์ต้องแจ้งตำรวจให้เข้าคุมสถานการณ์</td><td>-</td><td>-</td></tr>
+    <tr><td>4</td><td>กรณีมีการตีกัน แพทย์ต้องรอให้ไฟต์จบก่อนจึงนำศพออกมาได้</td><td>ยกเว้นสตอรี่ที่ขึ้นกับสภา</td><td>-</td></tr>
+    <tr><td>5</td><td>สตอรี่ทำร้ายหน่วยงาน ต้องมีแพทย์ + ตำรวจเข้าเวรอย่างน้อย 15 คน</td><td>ยกเว้นสตอรี่ที่ขึ้นกับสภา</td><td>-</td></tr>
+    <tr><td>6</td><td><strong>[ห้าม]</strong> ทำร้ายเจ้าหน้าที่ที่เข้าไปเอาศพ และห้ามเคลื่อนย้ายศพหลังประกาศขอคืน</td><td>ยกเว้นอุ้มศพคืนให้หน่วยงาน</td><td>-</td></tr>
+    <tr><td>7</td><td>ห้ามประชาชนหรือแก๊งชุบศพหน่วยงานในสตอรี่ทุกกรณี</td><td>อ้างอิงกฎประเทศ</td><td>-</td></tr>
+    <tr><td>8</td><td>แพทย์จะชุบผู้สลบหน้างานทันที</td><td>ยกเว้นสตอรี่ไม่ขึ้นกับสภา / ใส่บิลพื้นที่เสี่ยง</td><td>-</td></tr>
+    <tr><td>9</td><td>กรณีสลบปกติในเรเบล แพทย์เข้าเคสได้โดยไม่ต้องมีตำรวจ</td><td>ต้องไม่ใช่เคสทะเลาะวิวาท</td><td>-</td></tr>
+  </tbody>
+</table>
+
+<h2>เคสสตอรี่แก๊ง / ประชาชน</h2>
+
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>ข้อ</th>
+      <th>รายการ</th>
+      <th>หมายเหตุ</th>
+      <th>โทษ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>เข้าพื้นที่สตอรี่ผ่านสภา แพทย์ต้องประกาศก่อนเข้าพื้นที่</td><td>ให้ฝ่ายชนะออกจากพื้นที่ทันที</td><td>-</td></tr>
+    <tr><td>2</td><td><strong>[ห้าม]</strong> แก๊ง/ประชาชนอยู่ในเขตโรงพยาบาลเกิน 10 นาที</td><td>ออกแล้วห้ามกลับภายใน 10 นาที</td><td>Blacklist ทั้งแก๊ง</td></tr>
+    <tr><td>3</td><td>สตอรี่ที่ขึ้นกับสภา ไม่สามารถฉีดยาได้ทุกกรณี</td><td>ห้ามฉีดยาก่อนเริ่มสตอรี่ 30 นาที</td><td>-</td></tr>
+    <tr><td>4</td><td>แพทย์สามารถขอให้ตำรวจเปิดเคอร์ฟิวได้</td><td>กรณีอุ้มเอ๋อ กักศพ หรือทะเลาะวิวาท</td><td>-</td></tr>
+    <tr><td>5</td><td>หากมีหน่วยงานสลบ ให้ชุบหน่วยงานก่อนทันที</td><td>-</td><td>-</td></tr>
+    <tr><td>6</td><td>สตอรี่ขึ้นกับสภา ชุบหน้างาน</td><td>ไม่ขึ้นสภา นำไปชุบ รพ. ใกล้ที่สุด</td><td>-</td></tr>
+    <tr><td>7</td><td><strong>[ห้าม]</strong> หมออุ้มบุคคลที่มีสตอรี่ หรือช่วยเหลือ</td><td>-</td><td>-</td></tr>
+    <tr><td>8</td><td>กรณีประชาชนผิดกฎ Blacklist แพทย์สามารถเช็คบัตรได้ทันที</td><td>-</td><td>-</td></tr>
+    <tr><td>9</td><td>หากยังบลัฟหรือก่อกวนแพทย์ในพื้นที่สตอรี่</td><td>-</td><td>Blacklist ทันที</td></tr>
+  </tbody>
+</table>
+
+<h2>พื้นที่งานดำ / พื้นที่สุ่มเสี่ยง</h2>
+
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>ข้อ</th>
+      <th>รายการ</th>
+      <th>หมายเหตุ</th>
+      <th>โทษ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>พื้นที่งานดำ ได้แก่ จุดขโมยปูน / แคปซูล / จุดขายยา</td><td>-</td><td>-</td></tr>
+    <tr><td>2</td><td>แพทย์ต้องนำผู้สลบไปชุบที่ สน.</td><td>ทุกกรณี</td><td>-</td></tr>
+    <tr><td>3</td><td>หากไม่มีตำรวจเข้าเวร ให้นำไปชุบที่โรงพยาบาล</td><td>-</td><td>-</td></tr>
+    <tr><td>4</td><td>การชุบในพื้นที่งานดำ เป็นบิลพื้นที่สุ่มเสี่ยง</td><td>-</td><td>-</td></tr>
+    <tr><td>5</td><td>กรณีผู้สลบในคุกใหญ่ สามารถใช้ฮอได้</td><td>ต้องมีตำรวจไปด้วย 1 นาย</td><td>-</td></tr>
+  </tbody>
+</table>
+
+<h2>เงื่อนไขการแจ้งการทำผิดกฎ</h2>
+
+<p>
+  การแจ้งการทำผิดกฎต้องมีหลักฐานที่ชัดเจน ได้แก่
+</p>
+
+<ul>
+  <li>มี Overlay พร้อมเสียงผู้แจ้งและเสียงในเหตุการณ์</li>
+  <li>ภาพหรือวิดีโอที่ระบุตัวตนได้ชัดเจน</li>
+</ul>
+
+<p><strong>❌ ไม่รับแจ้งปากเปล่า / ไม่มีพยาน / หลักฐานไม่ชัดเจน ❌</strong></p>
+
+<p>
+  สามารถแจ้งได้ภายใน <strong>12 ชั่วโมง</strong> เท่านั้น  
+  และฝ่ายโต้แย้งต้องมีหลักฐานของตนเอง
+</p>
+
 </main>
 
 <footer>Saber Town RP 2026 – Created by Pegasus Team </footer>
 
 <script>
+/* ===== Dropdown ===== */
 function closeAllDropdowns(){
   document.querySelectorAll('.nav-dropdown').forEach(d => d.style.display = 'none');
   document.querySelectorAll('.nav-group > a').forEach(a => {
@@ -83,16 +170,50 @@ function closeAllDropdowns(){
 
 function toggleMenu(menuId, btn){
   const menu = document.getElementById(menuId);
+  if (!menu) return;
+
   const willOpen = menu.style.display !== "block";
+
+  // ปิดอันอื่นก่อนเสมอ
   closeAllDropdowns();
+
+  // เปิด/ปิดอันที่กด
   menu.style.display = willOpen ? "block" : "none";
   btn.textContent = btn.textContent.replace(willOpen ? "▾" : "▴", willOpen ? "▴" : "▾");
 }
 
+// คลิกนอก nav -> ปิด dropdown
 document.addEventListener("click", (e) => {
   const insideNav = e.target.closest("nav");
-  if(!insideNav) closeAllDropdowns();
+  if (!insideNav) closeAllDropdowns();
 });
+
+/* ===== Header hide on scroll ===== */
+let lastY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  if (!header) return;
+
+  const y = window.scrollY;
+
+  // อยู่บนสุด: โชว์เสมอ
+  if (y < 40) {
+    header.classList.remove("header-hide");
+    lastY = y;
+    return;
+  }
+
+  // เลื่อนลง: ซ่อน / เลื่อนขึ้น: โชว์
+  if (y > lastY) {
+    header.classList.add("header-hide");
+    closeAllDropdowns(); // กันเมนูค้างตอนแถบหาย
+  } else {
+    header.classList.remove("header-hide");
+  }
+
+  lastY = y;
+}, { passive: true });
 </script>
 
 </body>

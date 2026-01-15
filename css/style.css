@@ -152,7 +152,7 @@ nav a.current-page{
 
 .content-section h2{
   color:#39ff14;
-  margin-top:5px;
+  margin-top:px;
 }
 
 .content-section p{
@@ -806,5 +806,44 @@ header.header-hide{
   opacity: 0;
   transform: translateY(-18px);
   pointer-events: none;
+}
+
+.rules-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+  color:#00ff88;
+  font-size:14px;
+}
+
+.rules-table thead{
+  background:rgba(0,255,136,.15);
+}
+
+.rules-table th,
+.rules-table td{
+  border:1px solid rgba(0,255,136,.3);
+  padding:12px 10px;
+  text-align:left;
+}
+
+.rules-table th{
+  color:#39ff14;
+  text-align:center;
+}
+
+.rules-table tbody tr:hover{
+  background:rgba(0,255,136,.08);
+}
+
+.image-center{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.image-center img{
+  max-width: 100%;
+  height: auto;
 }
 
