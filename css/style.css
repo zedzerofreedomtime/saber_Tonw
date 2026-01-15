@@ -847,3 +847,8 @@ header.header-hide{
   height: auto;
 }
 
+/* ✅ ดรอปดาวน์ของเมนูที่อยู่ชิดขวา (เช่น สภา) */
+.nav-group.nav-right .nav-dropdown{
+  left: auto !important;
+  right: 0 !important;
+}
